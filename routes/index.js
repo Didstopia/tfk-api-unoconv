@@ -16,6 +16,13 @@ var routes = [
       },
       handler: handlers.handleUpload
     }
+  },
+  {
+    method: 'GET',
+    path: '/health',
+    handler: function (request, reply) {
+      return reply('OK');
+    }
   }
 ]
 
